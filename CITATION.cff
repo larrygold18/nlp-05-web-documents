@@ -20,8 +20,13 @@ authors:
     orcid: "https://orcid.org/0000-0001-6165-7389"
     affiliation: "Northwest Missouri State University, USA"
 
-repository-code: "https://github.com/denisecase/nlp-05-web-documents"
-url: "https://github.com/denisecase/nlp-05-web-documents"
+  - family-names: Otubushin
+    given-names: Sandra
+    affiliation: "Northwest Missouri State University, USA"
+
+
+repository-code: "https://github.com/larrygold18/nlp-05-web-documents"
+url: "https://github.com/larrygold18/nlp-05-web-documents"
 license: MIT
 
 abstract: |
