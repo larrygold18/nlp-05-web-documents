@@ -12,7 +12,7 @@
 2026-04-03 11:46:24 | INFO | CI | RAW_PATH = data\raw
 2026-04-03 11:46:24 | INFO | CI | PROCESSED_PATH = data\processed
 2026-04-03 11:46:24 | INFO | CI | ========================
-2026-04-03 11:46:24 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-03 11:46:24 | INFO | CI | STAGE 01: EXTRACT starting...
 2026-04-03 11:46:24 | INFO | CI | ========================
 2026-04-03 11:46:24 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
 2026-04-03 11:46:24 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
@@ -129,7 +129,7 @@
 2026-04-06 12:33:02 | INFO | CI | RAW_PATH = data\raw
 2026-04-06 12:33:02 | INFO | CI | PROCESSED_PATH = data\processed
 2026-04-06 12:33:02 | INFO | CI | ========================
-2026-04-06 12:33:02 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-06 12:33:02 | INFO | CI | STAGE 01: EXTRACT starting...
 2026-04-06 12:33:02 | INFO | CI | ========================
 2026-04-06 12:33:02 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
 2026-04-06 12:33:03 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
@@ -168,7 +168,7 @@
 2026-04-06 12:52:39 | INFO | CI | RAW_PATH = data\raw
 2026-04-06 12:52:39 | INFO | CI | PROCESSED_PATH = data\processed
 2026-04-06 12:52:39 | INFO | CI | ========================
-2026-04-06 12:52:39 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-06 12:52:39 | INFO | CI | STAGE 01: EXTRACT starting...
 2026-04-06 12:52:39 | INFO | CI | ========================
 2026-04-06 12:52:39 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
 2026-04-06 12:52:39 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
@@ -214,7 +214,7 @@
 2026-04-06 15:30:29 | INFO | CI | RAW_PATH = data\raw
 2026-04-06 15:30:29 | INFO | CI | PROCESSED_PATH = data\processed
 2026-04-06 15:30:29 | INFO | CI | ========================
-2026-04-06 15:30:29 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-06 15:30:29 | INFO | CI | STAGE 01: EXTRACT starting...
 2026-04-06 15:30:29 | INFO | CI | ========================
 2026-04-06 15:30:29 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
 2026-04-06 15:30:29 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
@@ -250,3 +250,53 @@
 2026-04-06 15:30:29 | INFO | CI | ========================
 2026-04-06 15:30:29 | INFO | CI | Pipeline executed successfully!
 2026-04-06 15:30:29 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | === RUN START ===
+2026-04-06 16:03:12 | INFO | CI | project=Module 5: EVTL PIPELINE - WEB DOCUMENTS (HTML)
+2026-04-06 16:03:12 | INFO | CI | repo_dir=nlp-05-web-documents
+2026-04-06 16:03:12 | INFO | CI | python=3.14.3
+2026-04-06 16:03:12 | INFO | CI | os=Windows 11
+2026-04-06 16:03:12 | INFO | CI | shell=powershell
+2026-04-06 16:03:12 | INFO | CI | cwd=.
+2026-04-06 16:03:12 | INFO | CI | github_actions=False
+2026-04-06 16:03:12 | INFO | CI | START PIPELINE
+2026-04-06 16:03:12 | INFO | CI | ROOT_PATH = .
+2026-04-06 16:03:12 | INFO | CI | DATA_PATH = data
+2026-04-06 16:03:12 | INFO | CI | RAW_PATH = data\raw
+2026-04-06 16:03:12 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | STAGE 01: EXTRACT starting...
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
+2026-04-06 16:03:12 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
+2026-04-06 16:03:12 | INFO | CI | SINK PATH = data\raw\sandra_raw.html
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | title_tag found: True
+2026-04-06 16:03:12 | INFO | CI | authors_tag found: True
+2026-04-06 16:03:12 | INFO | CI | abstract_tag found: True
+2026-04-06 16:03:12 | INFO | CI | subjects_tag found: True
+2026-04-06 16:03:12 | INFO | CI | Validation passed.
+2026-04-06 16:03:12 | INFO | CI | Sink: validated BeautifulSoup object
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | Author team size: large
+2026-04-06 16:03:12 | INFO | CI | Abstract size label: long
+2026-04-06 16:03:12 | INFO | CI | Has DOI: yes
+2026-04-06 16:03:12 | INFO | CI | Paper age label: recent
+2026-04-06 16:03:12 | INFO | CI | Transformation complete.
+2026-04-06 16:03:12 | INFO | CI | Columns: ['title', 'authors', 'author_count', 'author_team_size', 'abstract', 'abstract_length', 'abstract_size_label', 'subjects', 'submitted_date', 'paper_age_label', 'doi', 'has_doi', 'pdf_url']
+2026-04-06 16:03:12 | INFO | CI | DataFrame preview:
+             title  ...                           pdf_url
+0  Agents of Chaos  ...  https://arxiv.org/pdf/2602.20021
+
+[1 rows x 13 columns]
+2026-04-06 16:03:12 | INFO | CI | Sink: Pandas DataFrame created
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | STAGE 04: LOAD starting...
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | SINK PATH = data\processed\sandra_processed.csv
+2026-04-06 16:03:12 | INFO | CI | ========================
+2026-04-06 16:03:12 | INFO | CI | Pipeline executed successfully!
+2026-04-06 16:03:12 | INFO | CI | ========================

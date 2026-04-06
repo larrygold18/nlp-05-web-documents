@@ -201,3 +201,16 @@ so later steps can run without errors or unexpected results.
 In this project, validation is implemented directly,
 so all checks are visible, repeatable, and easy to review as part
 of the pipeline.
+
+## Custom Application
+
+This project applies an EVTL HTML pipeline to an arXiv paper page and transforms the page into a structured dataset.
+
+In addition to extracting metadata such as title, authors, subjects, DOI, submitted date, and PDF URL, the project also adds analytical features such as:
+
+- author_team_size
+- abstract_size_label
+- has_doi
+- paper_age_label
+
+These additions make the output more useful for downstream analysis.
