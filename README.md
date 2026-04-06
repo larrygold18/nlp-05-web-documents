@@ -202,6 +202,23 @@ In this project, validation is implemented directly,
 so all checks are visible, repeatable, and easy to review as part
 of the pipeline.
 
+
+## Technical Modification
+
+### What I Changed
+I created custom versions of the configuration, validation, and transformation files for the HTML pipeline. I updated the output file names so my project would not overwrite the original case files.
+
+In my custom transformation stage, I expanded the extraction logic to capture additional metadata from the arXiv page, including subjects, DOI, submitted date, PDF URL, author count, and abstract length.
+
+### Why I Made This Change
+I wanted to make the output more informative and better demonstrate how HTML can be transformed into a richer analysis-ready dataset.
+
+### What I Observed
+After running the modified pipeline, the processed file included more metadata and useful derived fields. This made the dataset more detailed and easier to analyze.
+
+### What I Learned
+I learned that even when the source is a single HTML page, small changes to parsing logic can significantly improve the usefulness of the final dataset.
+
 ## Custom Application
 
 This project applies an EVTL HTML pipeline to an arXiv paper page and transforms the page into a structured dataset.
