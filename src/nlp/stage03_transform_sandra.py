@@ -116,6 +116,29 @@ def run_transform(
         pdf_url = f"https://arxiv.org{pdf_url}"
 
     # ============================================================
+    # ADD CUSTOM ANALYTICAL FEATURES
+    # ============================================================
+
+    if author_count <= 3:
+        author_team_size = "small"
+    elif author_count <= 10:
+        author_team_size = "medium"
+    else:
+        author_team_size = "large"
+
+    if abstract_length < 500:
+        abstract_size_label = "short"
+    elif abstract_length < 1200:
+        abstract_size_label = "medium"
+    else:
+        abstract_size_label = "long"
+
+    has_doi = "yes" if doi != "unknown" else "no"
+
+    submitted_text = submitted_date.lower()
+    paper_age_label = "recent" if "2026" in submitted_text else "older"
+
+    # ============================================================
     # CREATE RECORD
     # ============================================================
 
@@ -123,19 +146,32 @@ def run_transform(
         "title": title,
         "authors": authors,
         "author_count": author_count,
+        "author_team_size": author_team_size,
         "abstract": abstract,
         "abstract_length": abstract_length,
+        "abstract_size_label": abstract_size_label,
         "subjects": subjects,
         "submitted_date": submitted_date,
+        "paper_age_label": paper_age_label,
         "doi": doi,
+        "has_doi": has_doi,
         "pdf_url": pdf_url,
     }
+
+    # ============================================================
+    # CREATE DATAFRAME
+    # ============================================================
 
     df = pd.DataFrame([record])
 
     # ============================================================
     # LOG RESULTS
     # ============================================================
+
+    LOG.info(f"Author team size: {author_team_size}")
+    LOG.info(f"Abstract size label: {abstract_size_label}")
+    LOG.info(f"Has DOI: {has_doi}")
+    LOG.info(f"Paper age label: {paper_age_label}")
 
     LOG.info("Transformation complete.")
     LOG.info(f"Columns: {list(df.columns)}")
