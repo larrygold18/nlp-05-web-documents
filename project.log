@@ -89,3 +89,114 @@
 2026-04-03 11:46:24 | INFO | CI | ========================
 2026-04-03 11:46:24 | INFO | CI | Pipeline executed successfully!
 2026-04-03 11:46:24 | INFO | CI | ========================
+2026-04-06 12:02:39 | INFO | CI | === RUN START ===
+2026-04-06 12:02:39 | INFO | CI | project=Module 5: EVTL PIPELINE - WEB DOCUMENTS (HTML)
+2026-04-06 12:02:39 | INFO | CI | repo_dir=nlp-05-web-documents
+2026-04-06 12:02:39 | INFO | CI | python=3.14.3
+2026-04-06 12:02:39 | INFO | CI | os=Windows 11
+2026-04-06 12:02:39 | INFO | CI | shell=powershell
+2026-04-06 12:02:39 | INFO | CI | cwd=.
+2026-04-06 12:02:39 | INFO | CI | github_actions=False
+2026-04-06 12:02:39 | INFO | CI | START PIPELINE
+2026-04-06 12:02:39 | INFO | CI | ROOT_PATH = .
+2026-04-06 12:02:39 | INFO | CI | DATA_PATH = data
+2026-04-06 12:02:39 | INFO | CI | RAW_PATH = data\raw
+2026-04-06 12:02:39 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-06 12:11:47 | INFO | CI | === RUN START ===
+2026-04-06 12:11:47 | INFO | CI | project=Module 5: EVTL PIPELINE - WEB DOCUMENTS (HTML)
+2026-04-06 12:11:47 | INFO | CI | repo_dir=nlp-05-web-documents
+2026-04-06 12:11:47 | INFO | CI | python=3.14.3
+2026-04-06 12:11:47 | INFO | CI | os=Windows 11
+2026-04-06 12:11:47 | INFO | CI | shell=powershell
+2026-04-06 12:11:47 | INFO | CI | cwd=.
+2026-04-06 12:11:47 | INFO | CI | github_actions=False
+2026-04-06 12:11:47 | INFO | CI | START PIPELINE
+2026-04-06 12:11:47 | INFO | CI | ROOT_PATH = .
+2026-04-06 12:11:47 | INFO | CI | DATA_PATH = data
+2026-04-06 12:11:47 | INFO | CI | RAW_PATH = data\raw
+2026-04-06 12:11:47 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-06 12:33:02 | INFO | CI | === RUN START ===
+2026-04-06 12:33:02 | INFO | CI | project=Module 5: EVTL PIPELINE - WEB DOCUMENTS (HTML)
+2026-04-06 12:33:02 | INFO | CI | repo_dir=nlp-05-web-documents
+2026-04-06 12:33:02 | INFO | CI | python=3.14.3
+2026-04-06 12:33:02 | INFO | CI | os=Windows 11
+2026-04-06 12:33:02 | INFO | CI | shell=powershell
+2026-04-06 12:33:02 | INFO | CI | cwd=.
+2026-04-06 12:33:02 | INFO | CI | github_actions=False
+2026-04-06 12:33:02 | INFO | CI | START PIPELINE
+2026-04-06 12:33:02 | INFO | CI | ROOT_PATH = .
+2026-04-06 12:33:02 | INFO | CI | DATA_PATH = data
+2026-04-06 12:33:02 | INFO | CI | RAW_PATH = data\raw
+2026-04-06 12:33:02 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-06 12:33:02 | INFO | CI | ========================
+2026-04-06 12:33:02 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-06 12:33:02 | INFO | CI | ========================
+2026-04-06 12:33:02 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
+2026-04-06 12:33:03 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
+2026-04-06 12:33:03 | INFO | CI | SINK PATH = data\raw\sandra_raw.html
+2026-04-06 12:33:03 | INFO | CI | ========================
+2026-04-06 12:33:03 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-06 12:33:03 | INFO | CI | ========================
+2026-04-06 12:33:03 | INFO | CI | title_tag found: True
+2026-04-06 12:33:03 | INFO | CI | authors_tag found: True
+2026-04-06 12:33:03 | INFO | CI | abstract_tag found: True
+2026-04-06 12:33:03 | INFO | CI | subjects_tag found: True
+2026-04-06 12:33:03 | INFO | CI | Validation passed.
+2026-04-06 12:33:03 | INFO | CI | Sink: validated BeautifulSoup object
+2026-04-06 12:33:03 | INFO | CI | ========================
+2026-04-06 12:33:03 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-04-06 12:33:03 | INFO | CI | ========================
+2026-04-06 12:33:03 | INFO | CI | Transformation complete.
+2026-04-06 12:33:03 | INFO | CI | Columns: ['title', 'authors', 'author_count', 'abstract', 'abstract_length', 'subjects', 'submitted_date', 'doi', 'pdf_url']
+2026-04-06 12:33:03 | INFO | CI | DataFrame preview:
+             title  ...                           pdf_url
+0  Agents of Chaos  ...  https://arxiv.org/pdf/2602.20021
+
+[1 rows x 9 columns]
+2026-04-06 12:33:03 | INFO | CI | Sink: Pandas DataFrame created
+2026-04-06 12:52:39 | INFO | CI | === RUN START ===
+2026-04-06 12:52:39 | INFO | CI | project=Module 5: EVTL PIPELINE - WEB DOCUMENTS (HTML)
+2026-04-06 12:52:39 | INFO | CI | repo_dir=nlp-05-web-documents
+2026-04-06 12:52:39 | INFO | CI | python=3.14.3
+2026-04-06 12:52:39 | INFO | CI | os=Windows 11
+2026-04-06 12:52:39 | INFO | CI | shell=powershell
+2026-04-06 12:52:39 | INFO | CI | cwd=.
+2026-04-06 12:52:39 | INFO | CI | github_actions=False
+2026-04-06 12:52:39 | INFO | CI | START PIPELINE
+2026-04-06 12:52:39 | INFO | CI | ROOT_PATH = .
+2026-04-06 12:52:39 | INFO | CI | DATA_PATH = data
+2026-04-06 12:52:39 | INFO | CI | RAW_PATH = data\raw
+2026-04-06 12:52:39 | INFO | CI | PROCESSED_PATH = data\processed
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | STAGE 01: EXTRACT starting... 
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | EXTRACT: Fetching HTML from https://arxiv.org/abs/2602.20021
+2026-04-06 12:52:39 | INFO | CI | SOURCE URL = https://arxiv.org/abs/2602.20021
+2026-04-06 12:52:39 | INFO | CI | SINK PATH = data\raw\sandra_raw.html
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | STAGE 02: VALIDATE starting...
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | title_tag found: True
+2026-04-06 12:52:39 | INFO | CI | authors_tag found: True
+2026-04-06 12:52:39 | INFO | CI | abstract_tag found: True
+2026-04-06 12:52:39 | INFO | CI | subjects_tag found: True
+2026-04-06 12:52:39 | INFO | CI | Validation passed.
+2026-04-06 12:52:39 | INFO | CI | Sink: validated BeautifulSoup object
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | STAGE 03: TRANSFORM starting...
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | Transformation complete.
+2026-04-06 12:52:39 | INFO | CI | Columns: ['title', 'authors', 'author_count', 'abstract', 'abstract_length', 'subjects', 'submitted_date', 'doi', 'pdf_url']
+2026-04-06 12:52:39 | INFO | CI | DataFrame preview:
+             title  ...                           pdf_url
+0  Agents of Chaos  ...  https://arxiv.org/pdf/2602.20021
+
+[1 rows x 9 columns]
+2026-04-06 12:52:39 | INFO | CI | Sink: Pandas DataFrame created
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | STAGE 04: LOAD starting...
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | SINK PATH = data\processed\sandra_processed.csv
+2026-04-06 12:52:39 | INFO | CI | ========================
+2026-04-06 12:52:39 | INFO | CI | Pipeline executed successfully!
+2026-04-06 12:52:39 | INFO | CI | ========================
